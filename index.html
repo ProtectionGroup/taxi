@@ -1,0 +1,214 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="utf-8">
+        <title>Доступ обмежено</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+          /* @import url(//fonts.googleapis.com/css?family=Open+Sans:400,300,700&subset=latin,cyrillic);*/
+            @font-face {
+                font-family: "Open Sans";
+                src: url('web/css/OpenSans-Regular.ttf') format('truetype');
+                font-weight: 400;
+                font-style: normal;
+            }
+            @font-face {
+                font-family: "Open Sans";
+                src: url('web/css/OpenSans-Light.ttf') format('truetype');
+                font-weight: 300;
+                font-style: normal;
+            }
+            @font-face {
+                font-family: "Open Sans";
+                src: url('web/css/OpenSans-Semibold.ttf') format('truetype');
+                font-weight: 600;
+                font-style: normal;
+            }
+            html, body {
+  
+                color: #666;
+                font: 16px/21px  sans-serif;
+                margin: 0;
+				padding: 0;
+            }
+            body {
+				background: url('//static.lanet.ua/images/body_bg-noise_05.gif') repeat top left;
+				min-height: 100%;
+				font-family:"Open Sans",sans-serif;
+            }
+
+            a, a:hover, a:focus {
+                text-decoration: none;
+                outline: none;
+                transition: all 0.25s ease-out 0s;
+            }
+            a:hover, a:focus {
+                color: #00619D;
+            }
+			.container {
+				margin:0 auto;
+				max-width: 640px;
+                padding:10% 0 0;
+			}
+            .error {
+                margin: 10px;
+				font-size: 14px;
+				color: #999;
+				box-shadow: 0 1px 2px rgba(0,0,0,.1);
+            }
+            .error-header {
+                background: #fff;
+                color: #333;
+            	font-family:"Open Sans",sans-serif;
+                font-size: 19px;
+                line-height: 30px;
+                padding: 10px 20px;
+                text-align: center;
+				
+            }
+            .error-body {
+               /* background: #f5f5f5;*/
+                background:#fff;
+	            padding: 1px 20px 15px;
+				color: #666;
+				font-size: 14px;
+            }
+            .error-footer {
+                background-color: #ffffff;
+                padding: 15px 20px;
+            }
+			.color-red {
+			color: #f71e0e !important;
+			}
+			.message-item {
+			height: 40px;
+				margin: 20px 0 0;
+			}
+			.message-header {
+				clear: both;
+				/*margin-bottom: 10px;*/
+				color: #999999;
+				font-size: 13px;
+				line-height: 20px;
+			}
+			.item-descr, .item-value {
+				color: #333;
+				 font-size: 18px;
+   				 line-height: 21px;
+				
+
+			}
+			.item-descr {
+				float: left;
+				max-width: 70%;
+			}
+			.item-value {
+				float: right;
+				color: #c0c0c0;
+				font-size: 36px;
+				font-weight: 300;
+			}
+            .button-red {
+				background: none repeat scroll 0 0 #ea3f33;
+				border: 0 none;
+				border-radius: 1px;
+				box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+				color: #ffffff;
+				cursor: pointer;
+				display: block;
+				font-size: 16px;
+				font-weight: 300;
+				margin: 0;
+				outline: 0 none;
+				padding: 14px 15px;
+				text-align: center;
+				text-decoration: none;
+				transition: all 0.25s ease-out 0s;
+				width: auto;
+            }
+            .button-red:hover {
+                background: none repeat scroll 0 0 #d42316;
+            }
+            a.button-red:hover {
+                color:#ffffff;
+            }
+			a.readmore {
+                background: none repeat scroll 0 0 #0093d7;
+                color: #ffffff;
+                display: block;
+                 font-family:"Open Sans",sans-serif;
+                font-size: 16px;
+                height: 22px;
+                line-height: 25px;
+                margin-right: 10px;
+                padding: 4px 10px 6px;
+                position: relative;
+                text-align: center;
+                text-decoration: none;
+                transition: all 0.25s ease-out 0s;
+                width: 30%;
+                }
+            a.readmore:after {
+                -moz-border-bottom-colors: none;
+                -moz-border-left-colors: none;
+                -moz-border-right-colors: none;
+                -moz-border-top-colors: none;
+                border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #0093d7;
+                border-image: none;
+                border-style: solid;
+                border-width: 14px 14px 14px 7px;
+                clear: both;
+                content: " ";
+                height: 1px;
+                left: 100%;
+                margin-top: -14px;
+                position: absolute;
+                top: 50%;
+                transition: all 0.25s ease-out 0s;
+                width: 0;
+                }
+          a.readmore:hover:after {
+              border-left-color: #0076bf;
+
+              }
+          a.readmore:hover {
+              background-color:#0076bf;
+              }
+        </style>
+
+    </head>
+
+    <body>
+
+    
+    <div class="container">
+        <div class="error">
+            <div class="error-header">
+            Не коректний DNS сервер, доступ до Інтернету обмежений.
+            </div>
+            <div class="error-body">
+            
+Доступ в Інтернет обмежений у зв'язку з неправильно вказаним DNS сервером в налаштуваннях вашого мережевого підключення.
+Причиною можуть бути невірно введені налаштування або наслідки вірусної активності, яка з метою шахрайства виконала підміну DNS сервера провайдера.               
+<br><br>
+Для відновлення доступу в Інтернет, рекомендуємо перевірити налаштування мережевого підключення на предмет їх коректності. Мережеві налаштування повинні призначатися комп'ютеру автоматично за протоколом dhcp.
+<br><br>
+Що б використовувати зовнішній DNS сервер, необхідно зайти у особистий кабінет і на вкладці пристроїв дозволити фільтр ресурсів "DNS (Зовнішній)"
+            </div>
+             <div class="error-footer">
+             <a class="readmore" href="//my.lanet.ua/client_info.php?page=devices" role="button">Увійти в кабінет</a>
+
+
+            </div>
+        </div>
+	</div>
+    
+
+
+
+    
+
+    </body>
+    </html>
+    
